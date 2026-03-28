@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzammil — Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">MUZ.</a>
+      <button class="nav-hamburger" id="hambBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="closeNav()">About</a></li>
+        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-watermark">DEV</div>
+      <div class="hero-tag">
+        <span class="hero-dot"></span> Available for freelance
+      </div>
+      <h1>Muzam<br /><em>mil.</em></h1>
+      <p class="hero-role">Web Developer &amp; CSIT Student @ NED University</p>
+      <p class="hero-desc">
+        Building clean, fast websites from Karachi. I turn ideas into real
+        digital products — from landing pages to full web applications.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-gold">See My Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-skills">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">PHP</span>
+        <span class="pill">C</span>
+        <span class="pill">NED CSIT</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="sec-label">001 — About</div>
+      <div class="about-grid">
+        <div class="fu">
+          <h2 class="about-h">
+            Crafting the<br /><strong>web from scratch.</strong>
+          </h2>
+          <div class="edu-card">
+            <div class="edu-label">Currently Studying</div>
+            <div class="edu-title">CSIT — Computer Science &amp; IT</div>
+            <div class="edu-sub">
+              NED University of Engineering &amp; Technology · Karachi
+            </div>
+          </div>
+        </div>
+        <div class="fu" style="transition-delay: 0.12s">
+          <p class="about-p">
+            Hey, I'm Muzammil — a web developer and CS student based in Karachi,
+            Pakistan. I enjoy building websites that are both functional and
+            visually sharp.
+          </p>
+          <p class="about-p">
+            I work with HTML, CSS, JavaScript and PHP to bring projects to life.
+            I've also built a terminal Tic Tac Toe game in C for coursework.
+            Always learning, always building.
+          </p>
+          <div class="lang-grid">
+            <div class="lang-box">
+              <div class="lang-icon">🌐</div>
+              <div class="lang-name">HTML</div>
+            </div>
+            <div class="lang-box">
+              <div class="lang-icon">🎨</div>
+              <div class="lang-name">CSS</div>
+            </div>
+            <div class="lang-box">
+              <div class="lang-icon">🟨</div>
+              <div class="lang-name">JS</div>
+            </div>
+            <div class="lang-box">
+              <div class="lang-icon">🐘</div>
+              <div class="lang-name">PHP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="sec-label">002 — Projects</div>
+      <div class="proj-grid">
+        <div class="proj-card fu" data-id="0">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner t1">🎓</div>
+            <div class="proj-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-num">001</div>
+            <div class="proj-title">Aptech Website</div>
+            <p class="proj-desc">
+              A live institute website for Aptech — courses, admissions, and
+              contact info.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">PHP</span>
+            </div>
+          </div>
+          <div class="proj-learn">Learn More →</div>
+        </div>
+
+        <div class="proj-card fu" data-id="1" style="transition-delay: 0.08s">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner t2">✂️</div>
+            <div class="proj-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-num">002</div>
+            <div class="proj-title">TailorBlend</div>
+            <p class="proj-desc">
+              A tailoring &amp; clothing brand website with modern layout and
+              service listings.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="proj-learn">Learn More →</div>
+        </div>
+
+        <div class="proj-card fu" data-id="2" style="transition-delay: 0.16s">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner t3">🎮</div>
+            <div class="proj-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-num">003</div>
+            <div class="proj-title">Gaming Horizon</div>
+            <p class="proj-desc">
+              A bold gaming-themed website with dynamic UI, game showcases, and
+              hover effects.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="proj-learn">Learn More →</div>
+        </div>
+
+        <div class="proj-card fu" data-id="3" style="transition-delay: 0.24s">
+          <div class="proj-thumb">
+            <div class="proj-thumb-inner t4">❌⭕</div>
+            <div class="proj-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-num">004</div>
+            <div class="proj-title">Tic Tac Toe (C)</div>
+            <p class="proj-desc">
+              A 2-player terminal-based Tic Tac Toe game with win detection,
+              built in C.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">C Language</span
+              ><span class="tag">Terminal</span>
+            </div>
+          </div>
+          <div class="proj-learn">Learn More →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="sec-label">003 — Contact</div>
+      <h2 class="contact-h fu">Let's build<br />something <em>real.</em></h2>
+      <p class="contact-sub fu" style="transition-delay: 0.1s">
+        Open to freelance work, collabs, or just a chat about web dev. Drop me a
+        message anytime.
+      </p>
+      <div class="contact-row fu" style="transition-delay: 0.2s">
+        <a href="mailto:muzammil@email.com" class="c-link"
+          >✉ muzammil@email.com</a
+        >
+        <a href="https://github.com" target="_blank" class="c-link">⌥ GitHub</a>
+        <a href="https://linkedin.com" target="_blank" class="c-link"
+          >◈ LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2025 <span>Muzammil</span></div>
+      <div>Designed &amp; built with ♥ in <span>Karachi, PK</span></div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal" id="modal" role="dialog" aria-modal="true">
+        <div class="modal-thumb" id="modalThumb">
+          <button class="modal-close" id="modalClose" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-num" id="modalNum"></div>
+          <div class="modal-title" id="modalTitle"></div>
+          <div class="modal-desc" id="modalDesc"></div>
+          <div class="modal-tags" id="modalTags"></div>
+          <div class="modal-footer" id="modalFooter"></div>
+        </div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
